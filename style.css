@@ -42,8 +42,9 @@ nav {
 .left-area {
     flex: 1;
    }
-   .right-area {
+.right-area {
        flex: 2;
+       z-index: -9999;
    }
 .banner-container img {
     width: 100%;
@@ -64,4 +65,24 @@ nav {
     margin: 30px 0;
 }
 
+/* Responsive CSS */
+@media (max-width: 768px){
+    /* nav-area */
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo img {
+        height: 60%;
+        width: auto;
+        margin-top: 3vh;
+    }
+    /* banner-area */
+    .banner-container{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
 
